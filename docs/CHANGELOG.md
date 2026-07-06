@@ -36,3 +36,27 @@
 - Markdown 연구 리포트
 - `train_model.py`
 - Streamlit ML 학습 옵션
+
+## v0.5.0 - 2026-07-06
+### Added
+- Binance WebSocket realtime collector
+- Upbit WebSocket realtime collector
+- DuckDB storage layer
+- Realtime event persistence
+- Walk-forward ML backtest
+- GitHub Actions CI
+- AGENTS.md and CLAUDE.md
+- Realtime stream CLI
+- Walk-forward CLI
+
+### Changed
+- README updated for GitHub-based workflow
+- Main CLI supports `--walk-forward` and `--duckdb`
+
+## v0.5.1 - 2026-07-06
+### Added
+- `probability_version.py`
+- `config/runtime.py`
+- `scripts/query_duckdb.py`
+- `scripts/project_status.py`
+- Stream runner `--max-events` support

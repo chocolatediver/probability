@@ -1,30 +1,29 @@
 # Progress
 
-## 2026-07-03
+## 2026-07-06 - v0.5.1
 
 ### 완료
-- [x] v0.1 프로젝트 기본 골격
-- [x] v0.2 저장소/기술지표/리포트
-- [x] v0.3 실제 수집 구조/대시보드/백테스트 초안
-- [x] v0.4 ML 학습 파이프라인 추가
-- [x] RandomForest / GradientBoosting 분류기 추가
-- [x] Supervised Dataset 생성기 추가
-- [x] ML Metrics JSON 저장 추가
-- [x] Markdown 연구 리포트 추가
-- [x] Streamlit 대시보드 ML 학습 옵션 추가
-- [x] `PROGRESS.md`, `CHANGELOG.md`, `TODO.md` 갱신
+- [x] v0.5.1 개발
+- [x] 버전 모듈 `probability_version.py` 추가
+- [x] 런타임 설정 모듈 `config/runtime.py` 추가
+- [x] DuckDB 조회 CLI `scripts/query_duckdb.py` 추가
+- [x] 프로젝트 상태 점검 CLI `scripts/project_status.py` 추가
+- [x] 실시간 스트림 실행 스크립트에 `--max-events` 추가
+- [x] README / CHANGELOG / TODO 업데이트
 
 ### 진행률
-- Phase 1 Project Foundation: 99%
-- Phase 2 Market Collection: 50%
-- Phase 3 Feature Engineering: 60%
-- Phase 4 AI Prediction: 30%
-- Phase 5 Report/Dashboard: 45%
-- Phase 6 Backtest: 30%
+- Project Foundation: 100%
+- GitHub Workflow: 75%
+- Data Collection: 68%
+- Realtime Data: 52%
+- DuckDB Storage: 60%
+- Feature Engineering: 60%
+- AI Prediction: 35%
+- Backtest: 52%
+- Dashboard: 48%
+- Auto Trading: 0%
 
-### 다음 작업
-- [ ] 실데이터 API 안정화
-- [ ] XGBoost/LightGBM 선택적 연동
-- [ ] Walk-forward 백테스트
-- [ ] PDF/Excel 보고서
-- [ ] 실시간 WebSocket 수집
+### 다음 작업 v0.5.2
+- [ ] GitHub Pull Request 생성 및 main 병합
+- [ ] DuckDB Query Explorer를 Streamlit에 연결
+- [ ] 실시간 수집 상태 카드 추가

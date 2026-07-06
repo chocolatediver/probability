@@ -1,23 +1,36 @@
-# AI Multi-Market Quant Platform
+# Probability Platform
 
-Crypto, US Stock, Korea Stock 시장을 선택적으로 수집·정규화·분석하기 위한 Python 기반 AI 퀀트 플랫폼 골격입니다.
+AI 기반 멀티마켓 확률 예측 플랫폼입니다.
 
-## 현재 버전
-v0.1.0
+## Version
+v0.5.1
 
-## 실행
+## v0.5.1 핵심 변경
+- 실시간 수집 안전 종료 옵션 `--max-events`
+- DuckDB 조회 CLI
+- 프로젝트 상태 점검 CLI
+- Runtime config
+- Version module
+
+## 설치
 ```bash
-python -m scripts.init_project_status
-python main.py --market crypto --symbol BTC/USDT
-python main.py --market us --symbol AAPL
-python main.py --market korea --symbol 005930
+pip install -r requirements.txt
 ```
 
-## 핵심 구조
-- `collectors/`: 시장별 데이터 수집기
-- `normalize/`: 공통 OHLCV 스키마 변환
-- `feature_engine/`: 기술지표 생성
-- `prediction_engine/`: 확률 예측 엔진
-- `docs/PROGRESS.md`: 진행률 관리
-- `docs/CHANGELOG.md`: 변경 이력
-- `docs/TODO.md`: 작업 목록
+## 실시간 스트림
+```bash
+python scripts/run_realtime_stream.py --exchange binance --symbol BTC/USDT --type trade --max-events 20
+python scripts/run_realtime_stream.py --exchange upbit --symbol BTC/KRW --type orderbook --max-events 20
+```
+
+## DuckDB 조회
+```bash
+python scripts/query_duckdb.py --name events
+python scripts/query_duckdb.py --name trades
+python scripts/query_duckdb.py --name backtests
+```
+
+## 프로젝트 상태
+```bash
+python scripts/project_status.py
+```
