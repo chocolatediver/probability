@@ -1,0 +1,13 @@
+default_market: crypto
+default_timeframe: 1h
+
+markets:
+  crypto:
+    enabled: true
+    default_source: binance
+  us:
+    enabled: true
+    default_source: yahoo
+  korea:
+    enabled: true
+    default_source: kis
