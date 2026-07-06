@@ -1,17 +1,18 @@
 # TODO
 
 ## High Priority
-- [ ] 실데이터 API 안정화
-- [ ] KIS Open API 실호출 구현
-- [ ] XGBoost/LightGBM 선택적 연동
-- [ ] Walk-forward Backtest
-- [ ] PDF/Excel 보고서
+- [ ] v0.5.2 코드를 GitHub feature branch에 반영
+- [ ] Pull Request 생성
+- [ ] GitHub Actions CI 확인
+- [ ] main 병합 후 `v0.5.2` 태그 생성
+- [ ] XGBoost / LightGBM 선택 연동
 
 ## Medium Priority
-- [ ] DuckDB 분석 계층
 - [ ] SHAP Feature Importance
-- [ ] 실시간 WebSocket 수집
-- [ ] 모델 비교 리더보드
+- [ ] Optuna Hyperparameter Search
+- [ ] Model Leaderboard
+- [ ] 실시간 Dashboard 자동 새로고침
+- [ ] PDF / Excel 보고서
 
 ## Low Priority
 - [ ] GNN

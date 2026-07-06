@@ -1,30 +1,36 @@
 # Progress
 
-## 2026-07-03
+## 2026-07-06 - v0.5.2
 
 ### 완료
-- [x] v0.1 프로젝트 기본 골격
-- [x] v0.2 저장소/기술지표/리포트
-- [x] v0.3 실제 수집 구조/대시보드/백테스트 초안
-- [x] v0.4 ML 학습 파이프라인 추가
-- [x] RandomForest / GradientBoosting 분류기 추가
-- [x] Supervised Dataset 생성기 추가
-- [x] ML Metrics JSON 저장 추가
-- [x] Markdown 연구 리포트 추가
-- [x] Streamlit 대시보드 ML 학습 옵션 추가
-- [x] `PROGRESS.md`, `CHANGELOG.md`, `TODO.md` 갱신
+- [x] v0.5.2 Dashboard Framework 개발
+- [x] Dashboard 컴포넌트 패키지 생성
+- [x] Market Selector 추가
+- [x] Status Card 추가
+- [x] Chart Panel 추가
+- [x] Performance Card 추가
+- [x] DuckDB Explorer 추가
+- [x] OrderBook Panel 추가
+- [x] Log Panel 추가
+- [x] Streamlit 앱을 컴포넌트 기반 구조로 재작성
+- [x] 프로젝트 버전 v0.5.2로 갱신
+- [x] README / CHANGELOG / TODO / Release Note 갱신
 
 ### 진행률
-- Phase 1 Project Foundation: 99%
-- Phase 2 Market Collection: 50%
-- Phase 3 Feature Engineering: 60%
-- Phase 4 AI Prediction: 30%
-- Phase 5 Report/Dashboard: 45%
-- Phase 6 Backtest: 30%
+- Project Foundation: 100%
+- GitHub Workflow: 80%
+- Data Collection: 68%
+- Realtime Data: 55%
+- DuckDB Storage: 65%
+- Feature Engineering: 62%
+- AI Prediction: 38%
+- Backtest: 55%
+- Dashboard: 60%
+- Auto Trading: 0%
 
-### 다음 작업
-- [ ] 실데이터 API 안정화
-- [ ] XGBoost/LightGBM 선택적 연동
-- [ ] Walk-forward 백테스트
-- [ ] PDF/Excel 보고서
-- [ ] 실시간 WebSocket 수집
+### 다음 작업 v0.5.3
+- [ ] XGBoost 선택 연동
+- [ ] LightGBM 선택 연동
+- [ ] Model Leaderboard
+- [ ] SHAP Feature Importance
+- [ ] Optuna Hyperparameter Search
