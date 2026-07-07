@@ -1,29 +1,39 @@
 # Progress
 
-## 2026-07-06 - v0.5.1
+## 2026-07-06 - v0.6.0
 
 ### 완료
-- [x] v0.5.1 개발
-- [x] 버전 모듈 `probability_version.py` 추가
-- [x] 런타임 설정 모듈 `config/runtime.py` 추가
-- [x] DuckDB 조회 CLI `scripts/query_duckdb.py` 추가
-- [x] 프로젝트 상태 점검 CLI `scripts/project_status.py` 추가
-- [x] 실시간 스트림 실행 스크립트에 `--max-events` 추가
-- [x] README / CHANGELOG / TODO 업데이트
+- [x] v0.6.0 Development Infrastructure Sprint 수행
+- [x] `pyproject.toml` 추가
+- [x] `.editorconfig` 추가
+- [x] `.pre-commit-config.yaml` 추가
+- [x] `.env.example` 표준화
+- [x] YAML config 파일 추가
+- [x] `core/config_loader.py` 추가
+- [x] `core/logging_setup.py` 추가
+- [x] `collectors/factory.py` 추가
+- [x] `markets/selector.py`를 CollectorFactory 기반으로 변경
+- [x] `ml/registry.py` Model Registry 추가
+- [x] `scripts/list_models.py` 추가
+- [x] GitHub Actions 개선
+- [x] README / CHANGELOG / TODO / ARCHITECTURE / Release Note 갱신
 
 ### 진행률
 - Project Foundation: 100%
-- GitHub Workflow: 75%
-- Data Collection: 68%
-- Realtime Data: 52%
-- DuckDB Storage: 60%
-- Feature Engineering: 60%
-- AI Prediction: 35%
-- Backtest: 52%
-- Dashboard: 48%
+- GitHub Workflow: 90%
+- Development Infrastructure: 80%
+- Config System: 70%
+- Data Collection: 70%
+- Realtime Data: 58%
+- DuckDB Storage: 70%
+- Feature Engineering: 65%
+- AI Prediction: 45%
+- Backtest: 60%
+- Dashboard: 62%
 - Auto Trading: 0%
 
-### 다음 작업 v0.5.2
-- [ ] GitHub Pull Request 생성 및 main 병합
-- [ ] DuckDB Query Explorer를 Streamlit에 연결
-- [ ] 실시간 수집 상태 카드 추가
+### 다음 작업 v0.6.1
+- [ ] XGBoost/LightGBM/CatBoost 실제 학습 연동
+- [ ] Model Leaderboard
+- [ ] SHAP Feature Importance
+- [ ] Dashboard Model Registry 표시

@@ -3,34 +3,33 @@
 AI 기반 멀티마켓 확률 예측 플랫폼입니다.
 
 ## Version
-v0.5.1
+v0.6.0
 
-## v0.5.1 핵심 변경
-- 실시간 수집 안전 종료 옵션 `--max-events`
-- DuckDB 조회 CLI
-- 프로젝트 상태 점검 CLI
-- Runtime config
-- Version module
+## v0.6.0 핵심 변경
+- `pyproject.toml` 기반 프로젝트 표준화
+- `ruff`, `black`, `mypy`, `pytest` 설정
+- Config YAML 시스템
+- Logging setup
+- Collector Factory
+- Model Registry
+- GitHub Actions 개선
 
 ## 설치
 ```bash
-pip install -r requirements.txt
+pip install -e ".[dev]"
 ```
 
-## 실시간 스트림
+## Dashboard
 ```bash
-python scripts/run_realtime_stream.py --exchange binance --symbol BTC/USDT --type trade --max-events 20
-python scripts/run_realtime_stream.py --exchange upbit --symbol BTC/KRW --type orderbook --max-events 20
+streamlit run dashboard/streamlit_app.py
 ```
 
-## DuckDB 조회
+## 모델 목록
 ```bash
-python scripts/query_duckdb.py --name events
-python scripts/query_duckdb.py --name trades
-python scripts/query_duckdb.py --name backtests
+python scripts/list_models.py
 ```
 
-## 프로젝트 상태
+## 테스트
 ```bash
-python scripts/project_status.py
+pytest -q
 ```

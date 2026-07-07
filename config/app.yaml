@@ -1,0 +1,5 @@
+app:
+  name: Probability Platform
+  version: 0.6.0
+  environment: research
+  timezone: Asia/Seoul

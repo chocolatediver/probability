@@ -1,0 +1,5 @@
+dashboard:
+  refresh_seconds: 5
+  default_rows: 500
+  show_duckdb_explorer: true
+  show_orderbook: true
