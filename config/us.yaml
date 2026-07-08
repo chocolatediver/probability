@@ -1,0 +1,4 @@
+us:
+  default_source: yahoo
+  default_symbol: AAPL
+  sources: [yahoo, alpaca, polygon]

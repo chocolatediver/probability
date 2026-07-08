@@ -60,3 +60,54 @@
 - `scripts/query_duckdb.py`
 - `scripts/project_status.py`
 - Stream runner `--max-events` support
+
+## v0.5.2 - 2026-07-06
+### Added
+- Dashboard component architecture
+- Market selector component
+- Status card component
+- Chart panel component
+- Performance card component
+- DuckDB Explorer component
+- OrderBook panel component
+- Log panel component
+
+### Changed
+- Streamlit dashboard is now component-based.
+- Version updated to v0.5.2.
+
+## v0.6.0 - 2026-07-06
+### Added
+- Project standardization via `pyproject.toml`
+- `.editorconfig`
+- `.pre-commit-config.yaml`
+- YAML config system
+- `core.config_loader`
+- `core.logging_setup`
+- Collector Factory
+- Model Registry
+- Model listing CLI
+- Improved GitHub Actions CI
+
+### Changed
+- `markets.selector` now uses `CollectorFactory`.
+- README updated for v0.6.0.
+
+## v0.6.1 - 2026-07-07
+### Added
+- AI model factory
+- Optional XGBoost / LightGBM / CatBoost integration
+- Model leaderboard
+- Feature importance extraction
+- Model leaderboard CLI
+- Dashboard AI Models panel
+
+## v0.6.2 - 2026-07-07
+### Added
+- SHAP explainability structure with fallback feature importance
+- Optuna optimization structure
+- Feature importance CLI
+- Optuna CLI
+- Leaderboard persistence to DuckDB
+- Feature importance persistence to DuckDB
+- Dashboard Explainability panel

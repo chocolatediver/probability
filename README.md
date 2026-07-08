@@ -3,34 +3,37 @@
 AI 기반 멀티마켓 확률 예측 플랫폼입니다.
 
 ## Version
-v0.5.1
+v0.6.2
 
-## v0.5.1 핵심 변경
-- 실시간 수집 안전 종료 옵션 `--max-events`
-- DuckDB 조회 CLI
-- 프로젝트 상태 점검 CLI
-- Runtime config
-- Version module
+## v0.6.2 핵심 변경
+- SHAP 기반 Explainability 구조
+- Feature Importance fallback
+- Optuna 하이퍼파라미터 탐색 구조
+- Leaderboard DuckDB 저장
+- Feature Importance DuckDB 저장
+- Dashboard Explainability 패널
 
 ## 설치
 ```bash
-pip install -r requirements.txt
+pip install -e ".[dev]"
 ```
 
-## 실시간 스트림
+선택 ML/Explainability까지 설치:
 ```bash
-python scripts/run_realtime_stream.py --exchange binance --symbol BTC/USDT --type trade --max-events 20
-python scripts/run_realtime_stream.py --exchange upbit --symbol BTC/KRW --type orderbook --max-events 20
+pip install -e ".[dev,ml]"
 ```
 
-## DuckDB 조회
+## Explainability
 ```bash
-python scripts/query_duckdb.py --name events
-python scripts/query_duckdb.py --name trades
-python scripts/query_duckdb.py --name backtests
+python scripts/run_explainability.py --market crypto --symbol BTC/USDT --model random_forest --save
 ```
 
-## 프로젝트 상태
+## Optuna
 ```bash
-python scripts/project_status.py
+python scripts/run_optuna.py --market crypto --symbol BTC/USDT --model random_forest --trials 20
+```
+
+## Dashboard
+```bash
+streamlit run dashboard/streamlit_app.py
 ```

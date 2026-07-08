@@ -1,0 +1,4 @@
+korea:
+  default_source: kis
+  default_symbol: "005930"
+  sources: [kis, krx, dart]

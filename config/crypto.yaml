@@ -1,0 +1,4 @@
+crypto:
+  default_exchange: binance
+  default_symbol: BTC/USDT
+  exchanges: [binance, upbit, bybit, coinbase]

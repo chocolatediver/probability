@@ -1,29 +1,27 @@
 # Progress
 
-## 2026-07-06 - v0.5.1
+## 2026-07-07 - v0.6.2
 
 ### 완료
-- [x] v0.5.1 개발
-- [x] 버전 모듈 `probability_version.py` 추가
-- [x] 런타임 설정 모듈 `config/runtime.py` 추가
-- [x] DuckDB 조회 CLI `scripts/query_duckdb.py` 추가
-- [x] 프로젝트 상태 점검 CLI `scripts/project_status.py` 추가
-- [x] 실시간 스트림 실행 스크립트에 `--max-events` 추가
-- [x] README / CHANGELOG / TODO 업데이트
+- [x] v0.6.2 Explainability & Optimization Sprint 수행
+- [x] `ml/explainability.py` 추가
+- [x] SHAP 기반 Feature Importance 구조 추가
+- [x] SHAP 미설치 시 fallback 추가
+- [x] `ml/optimization.py` 추가
+- [x] Optuna 하이퍼파라미터 탐색 구조 추가
+- [x] `storage/model_store.py` 추가
+- [x] Leaderboard / Feature Importance DuckDB 저장 기능 추가
+- [x] Dashboard Explainability 패널 추가
 
 ### 진행률
-- Project Foundation: 100%
-- GitHub Workflow: 75%
-- Data Collection: 68%
-- Realtime Data: 52%
-- DuckDB Storage: 60%
-- Feature Engineering: 60%
-- AI Prediction: 35%
-- Backtest: 52%
-- Dashboard: 48%
-- Auto Trading: 0%
+- AI Prediction: 66%
+- Explainability: 45%
+- Optimization: 35%
+- Dashboard: 72%
+- DuckDB Storage: 76%
+- 전체 프로젝트: 약 52%
 
-### 다음 작업 v0.5.2
-- [ ] GitHub Pull Request 생성 및 main 병합
-- [ ] DuckDB Query Explorer를 Streamlit에 연결
-- [ ] 실시간 수집 상태 카드 추가
+### 다음 작업 v0.6.3
+- [ ] Walk-forward 검증 고도화
+- [ ] Model Performance History Dashboard
+- [ ] PDF / Excel 보고서
