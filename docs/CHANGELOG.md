@@ -92,3 +92,22 @@
 ### Changed
 - `markets.selector` now uses `CollectorFactory`.
 - README updated for v0.6.0.
+
+## v0.6.1 - 2026-07-07
+### Added
+- AI model factory
+- Optional XGBoost / LightGBM / CatBoost integration
+- Model leaderboard
+- Feature importance extraction
+- Model leaderboard CLI
+- Dashboard AI Models panel
+
+## v0.6.2 - 2026-07-07
+### Added
+- SHAP explainability structure with fallback feature importance
+- Optuna optimization structure
+- Feature importance CLI
+- Optuna CLI
+- Leaderboard persistence to DuckDB
+- Feature importance persistence to DuckDB
+- Dashboard Explainability panel

@@ -1,39 +1,27 @@
 # Progress
 
-## 2026-07-06 - v0.6.0
+## 2026-07-07 - v0.6.2
 
 ### 완료
-- [x] v0.6.0 Development Infrastructure Sprint 수행
-- [x] `pyproject.toml` 추가
-- [x] `.editorconfig` 추가
-- [x] `.pre-commit-config.yaml` 추가
-- [x] `.env.example` 표준화
-- [x] YAML config 파일 추가
-- [x] `core/config_loader.py` 추가
-- [x] `core/logging_setup.py` 추가
-- [x] `collectors/factory.py` 추가
-- [x] `markets/selector.py`를 CollectorFactory 기반으로 변경
-- [x] `ml/registry.py` Model Registry 추가
-- [x] `scripts/list_models.py` 추가
-- [x] GitHub Actions 개선
-- [x] README / CHANGELOG / TODO / ARCHITECTURE / Release Note 갱신
+- [x] v0.6.2 Explainability & Optimization Sprint 수행
+- [x] `ml/explainability.py` 추가
+- [x] SHAP 기반 Feature Importance 구조 추가
+- [x] SHAP 미설치 시 fallback 추가
+- [x] `ml/optimization.py` 추가
+- [x] Optuna 하이퍼파라미터 탐색 구조 추가
+- [x] `storage/model_store.py` 추가
+- [x] Leaderboard / Feature Importance DuckDB 저장 기능 추가
+- [x] Dashboard Explainability 패널 추가
 
 ### 진행률
-- Project Foundation: 100%
-- GitHub Workflow: 90%
-- Development Infrastructure: 80%
-- Config System: 70%
-- Data Collection: 70%
-- Realtime Data: 58%
-- DuckDB Storage: 70%
-- Feature Engineering: 65%
-- AI Prediction: 45%
-- Backtest: 60%
-- Dashboard: 62%
-- Auto Trading: 0%
+- AI Prediction: 66%
+- Explainability: 45%
+- Optimization: 35%
+- Dashboard: 72%
+- DuckDB Storage: 76%
+- 전체 프로젝트: 약 52%
 
-### 다음 작업 v0.6.1
-- [ ] XGBoost/LightGBM/CatBoost 실제 학습 연동
-- [ ] Model Leaderboard
-- [ ] SHAP Feature Importance
-- [ ] Dashboard Model Registry 표시
+### 다음 작업 v0.6.3
+- [ ] Walk-forward 검증 고도화
+- [ ] Model Performance History Dashboard
+- [ ] PDF / Excel 보고서
